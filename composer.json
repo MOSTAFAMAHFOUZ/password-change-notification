@@ -1,22 +1,22 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "mostafamahfouz/password-change-notification",
+    "description": "This is my package password-change-notification",
     "keywords": [
-        ":vendor_name",
+        "MOSTAFAMAHFOUZ",
         "laravel",
-        ":package_slug"
+        "password-change-notification"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/mostafamahfouz/password-change-notification",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "MostafaMahfouz",
+            "email": "emostafamahfouz@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.0",
         "spatie/laravel-package-tools": "^1.13.0",
         "illuminate/contracts": "^9.0"
     },
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "ven\\PasswordChangeNotification\\": "src",
+            "ven\\PasswordChangeNotification\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "ven\\PasswordChangeNotification\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,13 +61,19 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "ven\\PasswordChangeNotification\\PasswordChangeNotificationServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "PasswordChangeNotification": "ven\\PasswordChangeNotification\\Facades\\PasswordChangeNotification"
             }
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type":"path",
+            "url":"E/xampp/htdocs/kareem/package/password-change-notification"
+        }
+    ]
 }
